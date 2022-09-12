@@ -3,10 +3,7 @@ package ru.job4j.oop;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.assertj.core.api.Assertions.*;
-
-class PointTest {
+public class PointTest {
 
     @Test
     public void when00To20Then2() {
