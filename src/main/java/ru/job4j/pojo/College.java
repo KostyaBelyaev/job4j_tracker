@@ -12,10 +12,10 @@ public class College {
         student.setGroup(13262);
         student.setCreated(new Date());
         String lc = System.lineSeparator();
-        System.out.println("Фамилия: " + student.getSurname() + lc +
-                            "Имя: " + student.getName() + lc +
-                            "Отчество: " + student.getPatronymic() + lc +
-                            "Группа: " + student.getGroup() + lc +
-                            "Дата поступления: " + student.getCreated());
+        System.out.println("Фамилия: " + student.getSurname() + lc
+                            + "Имя: " + student.getName() + lc
+                            + "Отчество: " + student.getPatronymic() + lc
+                            + "Группа: " + student.getGroup() + lc
+                            + "Дата поступления: " + student.getCreated());
     }
 }
