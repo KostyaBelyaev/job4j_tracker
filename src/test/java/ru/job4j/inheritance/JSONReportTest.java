@@ -33,3 +33,4 @@ public class JSONReportTest {
         assertThat(result).isEqualTo(expected);
     }
 }
+
