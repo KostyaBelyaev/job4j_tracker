@@ -5,7 +5,7 @@ public class Book {
     private String name;
     private int countOfPages;
 
-    public Book (String name, int countOfPages) {
+    public Book(String name, int countOfPages) {
         this.name = name;
         this.countOfPages = countOfPages;
     }

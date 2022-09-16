@@ -33,7 +33,6 @@ public class Library {
                 System.out.println("Название книги: " + bk.getName() + "; количество страниц: " + bk.getCountOfPages());
             }
         }
-
     }
 
 }
