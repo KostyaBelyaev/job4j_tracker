@@ -58,7 +58,7 @@ public class Tracker {
             System.out.println(it.getName() + " " + it.getId());
         }
         System.out.println(tracker.size);
-        Item[] rsl = tracker.findByName("Third");
+        Item[] rsl = tracker.findByName("First");
         for (int i = 0; i < rsl.length; i++) {
             Item it = rsl[i];
             if (it != null) {
