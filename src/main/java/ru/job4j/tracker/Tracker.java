@@ -31,39 +31,30 @@ public class Tracker {
     }
 
     public Item findById(int id) {
-        Item rsl = null;
+        int index = indexOf(id);
+        return index != -1 ? items[index] : null;
+    }
+
+    private int indexOf(int id) {
+        int rsl = -1;
         for (int index = 0; index < size; index++) {
-            Item item = items[index];
-            if (item.getId() == id) {
-                rsl = item;
+            if (items[index].getId() == id) {
+                rsl = index;
                 break;
             }
         }
         return rsl;
     }
 
-    public static void main(String[] args) {
-        Tracker tracker = new Tracker();
-        Item first = new Item("First");
-        Item second = new Item("Second");
-        Item third = new Item("Third");
-        Item fourth = new Item("First");
-        tracker.add(first);
-        tracker.add(second);
-        tracker.add(third);
-        tracker.add(fourth);
-        Item[] result = tracker.findAll();
-        for (int i = 0; i < result.length; i++) {
-            Item it = result[i];
-            System.out.println(it.getName() + " " + it.getId());
-        }
-        System.out.println(tracker.size);
-        Item[] rsl = tracker.findByName("First");
-        for (int i = 0; i < rsl.length; i++) {
-            Item it = rsl[i];
-            if (it != null) {
-                System.out.println(it.getName() + " " + it.getId());
-            }
+    public boolean replace(int id, Item item) {
+        int index = indexOf(id);
+        if (index != -1) {
+            item.setId(id);
+            items[index] = item;
+            return true;
+        } else {
+            return false;
         }
     }
+
 }
