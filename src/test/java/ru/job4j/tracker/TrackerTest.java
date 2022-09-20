@@ -68,3 +68,4 @@ public class TrackerTest {
         assertThat(tracker.findById(id).getName()).isEqualTo("Bug with description");
     }
 }
+
