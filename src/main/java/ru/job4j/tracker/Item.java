@@ -50,8 +50,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Item{" +
-                "created=" + created.format(FORMATTER)
+        return "Item{" + "created=" + created.format(FORMATTER)
                 + ", id=" + id
                 + ", name='" + name + '\''
                 + '}';
